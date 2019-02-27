@@ -6,11 +6,16 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MenuComponent } from './menu/menu.component';
 import { LayoutModule } from '@angular/cdk/layout';
-import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule, MatTableModule, MatPaginatorModule, MatSortModule, MatGridListModule, MatCardModule, MatMenuModule, MatInputModule, MatSelectModule, MatRadioModule } from '@angular/material';
+import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule, MatTableModule, MatPaginatorModule,
+  MatSortModule, MatGridListModule, MatCardModule, MatMenuModule, MatInputModule,
+  MatSelectModule, MatRadioModule, MatTreeModule } from '@angular/material';
 import { TableComponent } from './table/table.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { AddressFormComponent } from './address-form/address-form.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { AuthorizationComponent } from './authorization/authorization.component';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { PnpTreeComponent } from './pnp-tree/pnp-tree.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +23,9 @@ import { ReactiveFormsModule } from '@angular/forms';
     MenuComponent,
     TableComponent,
     DashboardComponent,
-    AddressFormComponent
+    AddressFormComponent,
+    AuthorizationComponent,
+    PnpTreeComponent
   ],
   imports: [
     BrowserModule,
@@ -39,7 +46,9 @@ import { ReactiveFormsModule } from '@angular/forms';
     MatInputModule,
     MatSelectModule,
     MatRadioModule,
-    ReactiveFormsModule
+    MatCheckboxModule,
+    ReactiveFormsModule,
+    MatTreeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

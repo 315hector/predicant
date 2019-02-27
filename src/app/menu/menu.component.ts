@@ -10,6 +10,8 @@ import { map } from 'rxjs/operators';
 })
 export class MenuComponent {
 
+  // TODO: прописать resoulution для rowHeight Ratio
+
   isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)
     .pipe(
       map(result => result.matches)
