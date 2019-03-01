@@ -16,6 +16,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { AuthorizationComponent } from './authorization/authorization.component';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { PnpTreeComponent } from './pnp-tree/pnp-tree.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { PnpTreeComponent } from './pnp-tree/pnp-tree.component';
     DashboardComponent,
     AddressFormComponent,
     AuthorizationComponent,
-    PnpTreeComponent
+    PnpTreeComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
