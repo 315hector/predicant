@@ -1,0 +1,38 @@
+<!--<div>-->
+  <!--<mat-grid-list>-->
+    <!--<mat-grid-tile>-->
+      <!--<mat-grid-tile-header> tile header</mat-grid-tile-header>-->
+
+      <!--<mat-grid-tile-footer> tile footer</mat-grid-tile-footer>-->
+    <!--</mat-grid-tile>-->
+  <!--</mat-grid-list>-->
+<!--</div>-->
+
+<form [formGroup]="authForm" novalidate (ngSubmit)="onSubmit()"  class="auth-card">
+
+    <mat-card>
+      <mat-card-content>
+        <mat-form-field class="full-width">
+          <input matInput placeholder="login" formControlName="login">
+          <mat-error *ngIf="authForm.controls['login'].hasError('required')">
+            login is <strong>required</strong>
+          </mat-error>
+        </mat-form-field>
+        <mat-form-field class="full-width">
+          <input matInput placeholder="password" formControlName="pass">
+          <mat-error *ngIf="authForm.controls['pass'].hasError('required')">
+            password is <strong>required</strong>
+          </mat-error>
+        </mat-form-field>
+        <div class="full-width">
+          <mat-checkbox>remember me?</mat-checkbox>
+        </div>
+      </mat-card-content>
+      <mat-card-actions>
+        <button class="full-width" mat-raised-button color="primary" type="submit">ok</button>
+      </mat-card-actions>
+    </mat-card>
+
+</form>
+
+
